@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
         })
         return NextResponse.json(
             { message: "User registered successflully" },
-            { status: 400 }
+            { status: 201 }
         )
     } catch (error) {
         console.error("Registeration error", error);
